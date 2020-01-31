@@ -6,15 +6,54 @@
             name="viewport"
             content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
         />
-        <link rel="stylesheet" href="./css/framework7.bundle.min.css" />
+        <link rel="stylesheet" href="css/framework7.bundle.min.css" />
+        <link rel="stylesheet" href="css/framework7-icons.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <title>Blank App</title>
     </head>
     <body>
         <div id="app">
+            <!-- Left panel, let it be with reveal effect -->
+            <div class="panel panel-left panel-reveal">
+                ... panel content goes here ...
+            </div>
+
+            <!-- Right panel, with cover effect -->
+            <div class="panel panel-right panel-cover">
+                ... panel content goes here ...
+            </div>
             <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link">
+                                <i class="icon icon-back"></i>
+                                <span>Back</span>
+                            </a>
+                        </div>
+                        <div class="title">Page Title</div>
+                        <div class="right">
+                            <a
+                                href="#"
+                                class="link panel-open"
+                                data-panel="right"
+                            >
+                                <i class="f7-icons">poultry_leg</i>
+                                <span>Eat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="page" data-name="home">
-                    <div class="page-content">
-                        What it do what it be
+                    <div class="page-content"></div>
+                    <div class="toolbar toolbar-bottom">
+                        <div class="toolbar-inner">
+                            <a href="#" class="link">Link 1</a>
+                            <a href="#" class="link">Link 2</a>
+                            <a href="/page2/" class="link">Link 3</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -23,8 +62,8 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script
             type="text/javascript"
-            src="./js/framework7.bundle.min.js"
+            src="js/framework7.bundle.min.js"
         ></script>
-        <script type="text/javascript" src="./js/index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
